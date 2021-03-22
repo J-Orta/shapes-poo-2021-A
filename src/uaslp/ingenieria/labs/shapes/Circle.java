@@ -11,6 +11,16 @@ public class Circle extends Shape {
 
     // Re-definir el método en una clase hija: SOBRE-ESCRITURA -> OVERWRITING
 
+    @Override
+    public double getPerimeter() {
+        return 2*3.1416*radio;
+    }
+
+    @Override
+    public double getArea() {
+        return 3.1416*(radio*radio);
+    }
+
     // Sobrecarga = Overloading // polimorfismo
 
     // Polimorfismo: Enviar un mensaje a un objeto y que este responda de diferentes maneras
@@ -21,4 +31,5 @@ public class Circle extends Shape {
     public int getRadio() {
         return radio;
     }
+
 }

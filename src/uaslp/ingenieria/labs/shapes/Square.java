@@ -13,7 +13,17 @@ public class Square extends Shape {
         return "Square";
     }
 
-    public int getPerimeter() {
+    public double getPerimeter() {
         return side * 4;
+    }
+
+    @Override
+    public int getSidesCount() {
+        return 4;
+    }
+
+    @Override
+    public double getArea() {
+        return side*side;
     }
 }

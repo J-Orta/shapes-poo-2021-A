@@ -15,4 +15,20 @@ public class Rectangle extends Shape {
     public String getName() {
         return "Rectangle";
     }
+
+    @Override
+    public int getSidesCount() {
+        return 4;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 2*(base+height);
+    }
+
+    @Override
+    public double getArea() {
+        return (base*height);
+    }
 }
+

@@ -9,4 +9,10 @@ public class Triangle extends Shape {
     public String getName() {
         return "Triangle";
     }
+
+    @Override
+    public int getSidesCount() {
+        return 3;
+    }
 }
+
